@@ -1,0 +1,99 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:score_pulse/src/config/app_route.dart';
+import 'package:score_pulse/src/core/extensions/nums.dart';
+import 'package:score_pulse/src/core/utils/app_colors.dart';
+
+import '../../../../core/domain/entities/league.dart';
+import '../../../../core/media_query.dart';
+import '../../../../core/utils/app_strings.dart';
+import '../../../../core/widgets/custom_image.dart';
+import '../cubit/soccer_cubit.dart';
+
+Future<dynamic> buildBottomSheet({
+  required BuildContext context,
+  required League league,
+  required SoccerCubit cubit,
+}) {
+  return showModalBottomSheet(
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+    context: context,
+    builder: (context) => ModalSheetContent(league: league, cubit: cubit),
+  );
+}
+
+class ModalSheetContent extends StatelessWidget {
+  final League league;
+  final SoccerCubit cubit;
+
+  const ModalSheetContent({
+    super.key,
+    required this.league,
+    required this.cubit,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 15),
+      height: context.height / 5,
+      decoration: const BoxDecoration(
+        gradient: AppColors.blueGradient,
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CustomImage(
+                  width: 20.radius,
+                  height: 20.radius,
+                  imageUrl: league.logo,
+                ),
+                SizedBox(width: 5.width),
+                Flexible(
+                  child: Text(
+                    league.name,
+                    style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      color: AppColors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                context.push(Routes.fixtures, extra: league.id);
+                context.pop();
+              },
+              child: Text(
+                AppStrings.viewFixtures,
+                style: Theme.of(
+                  context,
+                ).textTheme.titleSmall?.copyWith(color: AppColors.darkBlue),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                context.push(Routes.standings, extra: league.id);
+                context.pop();
+              },
+              child: Text(
+                AppStrings.viewStandings,
+                style: Theme.of(
+                  context,
+                ).textTheme.titleSmall?.copyWith(color: AppColors.darkBlue),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
