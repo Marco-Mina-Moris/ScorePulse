@@ -20,7 +20,7 @@ class ViewAllTile extends StatelessWidget {
           side: BorderSide.none,
           padding: EdgeInsets.symmetric(horizontal: 10.width),
           surfaceTintColor: theme.colorScheme.outline,
-          foregroundColor: theme.colorScheme.onSurface.withOpacity(0.6),
+          foregroundColor: theme.colorScheme.onSurface.withValues(alpha: 0.6),
         ),
         child: Row(
           children: [
@@ -32,7 +32,7 @@ class ViewAllTile extends StatelessWidget {
             Icon(
               Icons.arrow_forward_ios_sharp,
               size: 12.radius,
-              color: theme.colorScheme.onSurface.withOpacity(0.6),
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
             ),
           ],
         ),

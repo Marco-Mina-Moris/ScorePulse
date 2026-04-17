@@ -114,7 +114,7 @@ class _FloatingBottomNav extends StatelessWidget {
           ),
           if (!isDark)
             BoxShadow(
-              color: accent.withOpacity(0.08),
+              color: accent.withValues(alpha: 0.08),
               blurRadius: 16,
               spreadRadius: 0,
               offset: const Offset(0, 2),
@@ -122,8 +122,8 @@ class _FloatingBottomNav extends StatelessWidget {
         ],
         border: Border.all(
           color: isDark
-              ? Colors.white.withOpacity(0.06)
-              : Colors.grey.withOpacity(0.12),
+              ? Colors.white.withValues(alpha: 0.06)
+              : Colors.grey.withValues(alpha: 0.12),
           width: 1,
         ),
       ),
@@ -182,7 +182,7 @@ class _NavItemWidget extends StatelessWidget {
         ),
         decoration: BoxDecoration(
           color: isSelected
-              ? accent.withOpacity(0.15)
+              ? accent.withValues(alpha: 0.15)
               : Colors.transparent,
           borderRadius: BorderRadius.circular(20),
         ),
@@ -243,12 +243,12 @@ class _SoccerHead extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(
-              color: theme.colorScheme.primary.withOpacity(0.4),
+              color: theme.colorScheme.primary.withValues(alpha: 0.4),
               width: 1.5,
             ),
             boxShadow: [
               BoxShadow(
-                color: theme.colorScheme.primary.withOpacity(0.15),
+                color: theme.colorScheme.primary.withValues(alpha: 0.15),
                 blurRadius: 8,
                 spreadRadius: 1,
               ),

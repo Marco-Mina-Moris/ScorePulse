@@ -101,12 +101,12 @@ class FixtureShimmerList extends StatelessWidget {
               color: Theme.of(context).colorScheme.surface,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: Theme.of(context).colorScheme.outline.withOpacity(0.3),
+                color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.3),
                 width: 0.5,
               ),
             ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+            child: const Padding(
+              padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
               child: Row(
                 children: [
                   // Home Team
@@ -114,35 +114,35 @@ class FixtureShimmerList extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const ShimmerSkeleton(width: 40, height: 40, borderRadius: 20),
-                        const SizedBox(height: 10),
-                        const ShimmerSkeleton(width: 60, height: 12),
+                        ShimmerSkeleton(width: 40, height: 40, borderRadius: 20),
+                        SizedBox(height: 10),
+                        ShimmerSkeleton(width: 60, height: 12),
                       ],
                     ),
                   ),
-                  const SizedBox(width: 5),
+                  SizedBox(width: 5),
                   // Center Info
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const ShimmerSkeleton(width: 40, height: 16),
-                        const SizedBox(height: 10),
-                        const ShimmerSkeleton(width: 80, height: 12),
-                        const SizedBox(height: 10),
-                        const ShimmerSkeleton(width: 60, height: 24, borderRadius: 12),
+                        ShimmerSkeleton(width: 40, height: 16),
+                        SizedBox(height: 10),
+                        ShimmerSkeleton(width: 80, height: 12),
+                        SizedBox(height: 10),
+                        ShimmerSkeleton(width: 60, height: 24, borderRadius: 12),
                       ],
                     ),
                   ),
-                  const SizedBox(width: 5),
+                  SizedBox(width: 5),
                   // Away Team
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const ShimmerSkeleton(width: 40, height: 40, borderRadius: 20),
-                        const SizedBox(height: 10),
-                        const ShimmerSkeleton(width: 60, height: 12),
+                        ShimmerSkeleton(width: 40, height: 40, borderRadius: 20),
+                        SizedBox(height: 10),
+                        ShimmerSkeleton(width: 60, height: 12),
                       ],
                     ),
                   ),

@@ -91,7 +91,7 @@ class SoccerCubit extends Cubit<SoccerStates> {
     }
 
     debugPrint('🔄 [Cubit] getFixturesForDate → selectedDate=$dateStr');
-    print("Fetching fixtures for: $dateStr");
+    print('Fetching fixtures for: $dateStr');
     emit(SoccerTodayFixturesLoading(isTimerLoading: isTimerLoading));
 
     final todayFixtures = await todayFixturesUseCase(selectedDate);
@@ -102,7 +102,7 @@ class SoccerCubit extends Cubit<SoccerStates> {
       },
       (right) {
         debugPrint('✅ [Cubit] Got ${right.length} fixtures for $dateStr');
-        print("Got ${right.length} fixtures for: $dateStr");
+        print('Got ${right.length} fixtures for: $dateStr');
         // Cache the result
         _fixturesCache[dateStr] = right;
         // Limit cache size to 7 days

@@ -103,7 +103,7 @@ class SoccerDataSourceImpl implements SoccerDataSource {
         return fixtures;
       } else {
         debugPrint('📅 [ScorePulse] Fetching fixtures for DATE $dateStr via API-Football');
-        final fullUrl = '${Endpoints.apiFootballBaseUrl}${Endpoints.apiFootballFixtures}';
+        const fullUrl = '${Endpoints.apiFootballBaseUrl}${Endpoints.apiFootballFixtures}';
         final response = await dioHelper.get(
           url: fullUrl,
           queryParams: {

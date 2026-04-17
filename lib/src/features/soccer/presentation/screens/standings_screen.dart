@@ -77,7 +77,8 @@ class _StandingsScreenState extends State<StandingsScreen> {
                       ...List.generate(state.standings.standings.length, (
                         teamIndex,
                       ) {
-                        final TeamRank team = state.standings.standings[teamIndex];
+                        final TeamRank team =
+                            state.standings.standings[teamIndex];
                         return StandingsItem(
                           teamRank: team,
                           totalTeams: state.standings.standings.length,
@@ -107,8 +108,9 @@ class _StandingsScreenState extends State<StandingsScreen> {
                         ),
                         child: Text(
                           group.name,
-                          style: theme.textTheme.titleMedium
-                              ?.copyWith(color: AppColors.lightRed),
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            color: AppColors.lightRed,
+                          ),
                         ),
                       ),
                       SingleChildScrollView(

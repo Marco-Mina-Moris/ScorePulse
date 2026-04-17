@@ -108,13 +108,13 @@ class _FixturesScreenState extends State<FixturesScreen> {
           end: Alignment.bottomCenter,
           colors: [
             theme.colorScheme.primary,
-            theme.colorScheme.primary.withOpacity(0.7),
+            theme.colorScheme.primary.withValues(alpha: 0.7),
           ],
         ),
         border: Border.all(color: theme.colorScheme.surface, width: 2),
         boxShadow: [
           BoxShadow(
-            color: theme.colorScheme.shadow.withOpacity(0.3),
+            color: theme.colorScheme.shadow.withValues(alpha: 0.3),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
