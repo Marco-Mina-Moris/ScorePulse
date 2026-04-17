@@ -65,7 +65,7 @@ class _ArrowButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: theme.colorScheme.primary.withOpacity(0.1),
+      color: theme.colorScheme.primary.withValues(alpha: 0.1),
       borderRadius: BorderRadius.circular(12),
       child: InkWell(
         onTap: onTap,
@@ -145,11 +145,11 @@ class _DateLabel extends StatelessWidget {
           color: theme.colorScheme.surface,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: theme.colorScheme.primary.withOpacity(0.2),
+            color: theme.colorScheme.primary.withValues(alpha: 0.2),
           ),
           boxShadow: [
             BoxShadow(
-              color: theme.colorScheme.primary.withOpacity(0.05),
+              color: theme.colorScheme.primary.withValues(alpha: 0.05),
               blurRadius: 8,
               spreadRadius: 1,
             ),

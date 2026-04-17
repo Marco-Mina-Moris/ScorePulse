@@ -95,7 +95,7 @@ class _SoccerScreenState extends State<SoccerScreen> {
             if (state is SoccerTodayFixturesLoaded) {
               fixtureCount = state.todayFixtures.length;
             }
-            print("UI rebuilding with: $fixtureCount fixtures");
+            print('UI rebuilding with: $fixtureCount fixtures');
             return CustomScrollView(
               physics: const AlwaysScrollableScrollPhysics(
                 parent: BouncingScrollPhysics(),

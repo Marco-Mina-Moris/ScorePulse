@@ -134,7 +134,7 @@ class StandingsHeaders extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Container(
-      color: theme.colorScheme.outline.withOpacity(0.05),
+      color: theme.colorScheme.outline.withValues(alpha: 0.05),
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
       child: Row(
         children: [

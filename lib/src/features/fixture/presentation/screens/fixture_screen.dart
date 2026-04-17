@@ -163,7 +163,7 @@ class _FixtureScreenState extends State<FixtureScreen> {
     bool isSelected = false,
   }) => MaterialButton(
     onPressed: onPressed,
-    color: isSelected ? _fixtureColor : _fixtureColor.withOpacity(0.8),
+    color: isSelected ? _fixtureColor : _fixtureColor.withValues(alpha: 0.8),
     elevation: 0.0,
     padding: const EdgeInsets.all(16),
     shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),

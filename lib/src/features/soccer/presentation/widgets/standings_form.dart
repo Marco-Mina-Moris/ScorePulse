@@ -9,7 +9,7 @@ class StandingsForm extends StatelessWidget {
   const StandingsForm({super.key, required this.form});
 
   Color getBackground(int number) {
-    Color color = AppColors.grey.withOpacity(0.2);
+    Color color = AppColors.grey.withValues(alpha: 0.2);
     if (number == 1) color = AppColors.green;
     if (number == 0) color = AppColors.red;
     if (number == 2) color = AppColors.grey;

@@ -1,80 +1,158 @@
-# ScorePulse App
+# ScorePulse
 
-The ScorePulse application is a football sports application that presents the results of today's matches, team formations, and match events. It also allows arrangements for leagues and cups such as the English Premier League and the World Cup.
+![Cover](assets/screenshots/Cover_1.png)
 
-## 📱 App Mockup
-<img width="1892" height="1493" alt="scorepulse-app-cover" src="https://github.com/user-attachments/assets/45ba9f94-41d1-466c-a042-8769b36ab744" />
+> Live football scores, match updates, and standings -- all in one app.
 
-## 📱 Screenshots
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue)
+![Dart](https://img.shields.io/badge/Dart-3.x-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Android-green)
 
-Here are some previews of **ScorePulse App** after the latest update:
+---
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/2a434a88-85f9-41ee-a05c-e92423431d47" alt="ScorePulse screen - 1" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/7797df8d-c62a-4051-b388-712708f758d8" alt="ScorePulse screen - 2" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/d4c24c4c-a9e7-4ca6-96d2-ddd7b00550ff" alt="Fixtures screen" width="30%"/> &nbsp;
-  <br/><br/>
-  <img src="https://github.com/user-attachments/assets/3005b687-900a-4bef-8bed-c539c743e5d1" alt="ScorePulse screen - 3" width="30%"/>
-  <img src="https://github.com/user-attachments/assets/f43e2111-398d-46ce-aa89-76dd760ed89d" alt="Standings Screen - 1" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/2788bb4b-10f9-4070-9d02-b00c0528b2d4" alt="Standings Screen - 2" width="30%"/>
-</p>
+## Screenshots
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/81ae7248-db8b-45e6-a196-355924945a25" alt="Fixture screen lineup - 1" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/a6a5fe84-6588-4099-bb9f-35f53ce909e3" alt="Fixture screen lineup - 2" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/421e6cca-a5f8-44ff-acf7-c2a0e229f6bc" alt="Fixture screen statistics - 1" width="30%"/>
-  <br/><br/>
-  <img src="https://github.com/user-attachments/assets/c5837505-0faf-4d1f-974e-e9193871cc87" alt="Fixture screen statistics - 2" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/2f739c83-b9c4-4557-8438-cc8b0fdcafc8" alt="Fixture screen events - 1" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/a5ae300b-2b04-4dd8-a8ab-ab98d31fd0cf" alt="Fixture screen events - 2" width="30%"/> &nbsp;
-  <br/><br/>
-  <img src="https://github.com/user-attachments/assets/0c9c7990-cc51-4641-8137-e81ddb7e142f" alt="Fixture lineup 1" width="30%"/> &nbsp;
-  <img src="https://github.com/user-attachments/assets/cc873c39-069f-43a0-850f-3dd27a8eac62" alt="Fixture lineup 2" width="30%"/>
-  <img src="https://github.com/user-attachments/assets/eff986c1-30c2-4b54-be39-beccaaefbdcc" alt="Fixture statistics" width="30%"/> &nbsp;
-  <br/><br/>
-  <img src="https://github.com/user-attachments/assets/fde752ac-f3ff-4bda-948a-07c459ab72fb" alt="Fixture events" width="30%"/>
-</p>
+### Home Screen
 
-## 📥 Download (Play store) - ⚠️ NOT AVAILABLE RIGHT NOW ‼️
+| Dark Theme | Light Theme |
+|------------|-------------|
+| ![Home Dark](assets/screenshots/home_dark.png) | ![Home Light](assets/screenshots/home_light.png) |
 
-<p align="center">
-  <!-- <a href="https://play.google.com/store/apps/details?id=com.scorepulse.app" target="_blank"> -->
-    <a href="#" target="_blank">
-    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
-         alt="Get it on Play Store" 
-         height="80"/>
-  </a>
-</p>
+### Fixtures
 
-## ScorePulse mockup (Old version)
+| Dark Theme | Light Theme |
+|------------|-------------|
+| ![Fixtures Dark](assets/screenshots/fixtures_dark.png) | ![Fixtures Light](assets/screenshots/fixtures_light.png) |
 
-- Soccer screen
-  ![Soccer screen](https://user-images.githubusercontent.com/74488175/187052821-24662179-c54d-4606-8bcb-0e80124941d5.png)
+### Standings
 
-- Fixture lineups
-  ![fixture lineups](https://user-images.githubusercontent.com/74488175/187052851-f3a8e80f-7c24-41f0-9758-b8199a56788d.png)
+| Dark Theme | Light Theme |
+|------------|-------------|
+| ![Standings Dark](assets/screenshots/standings_dark.png) | ![Standings Light](assets/screenshots/standings_light.png) |
 
-- Fixture Standings
-  ![standings](https://user-images.githubusercontent.com/74488175/187052856-c4392b06-4334-4cb3-b05a-c62bbe8b94ef.png)
+### Match Details
 
-- Fixture details (events and statistics)
-  ![fixture_details](https://user-images.githubusercontent.com/74488175/187052862-316dfbc6-0f28-4fbc-b276-b950e5b43f10.png)
+| Lineups | Statistics | Events |
+|---------|------------|--------|
+| ![Lineups](assets/screenshots/match_lineups.png) | ![Stats](assets/screenshots/match_stats.png) | ![Events](assets/screenshots/match_events.png) |
 
-### Packages used in the project:
+---
 
-- [Dio](https://pub.dev/packages/dio)
-- [internet_connection_checker](https://pub.dev/packages/internet_connection_checker)
-- [equatable](https://pub.dev/packages/equatable)
-- [dartz](https://pub.dev/packages/dartz)
-- [bloc](https://pub.dev/packages/bloc)
-- [flutter_bloc](https://pub.dev/packages/flutter_bloc)
-- [hexcolor](https://pub.dev/packages/hexcolor)
-- [get_it](https://pub.dev/packages/get_it)
-- [intl](https://pub.dev/packages/intl)
+## Features
 
-### in the project:
+- Live match scores and real-time updates
+- Date navigator to browse past and future fixtures
+- Dark and Light theme with persistence
+- All major football leagues including Egyptian Premier League
+- League standings table
+- Match details: statistics, lineups, and events
+- Fast startup and smooth scrolling performance
+- Dual API: 365Scores for today, API-Football for other dates
 
-- bloc as State managment
-- Clean code
-- Clean architecture
-- [Restful api](https://www.api-football.com/documentation-v3)
+---
+
+## Architecture
+
+- Clean Architecture (data, domain, presentation layers)
+- BLoC pattern for state management (no Cubit)
+- Repository pattern for data abstraction
+- Dependency injection with GetIt
+
+---
+
+## Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| Flutter & Dart | Mobile development |
+| BLoC | State management |
+| Dio | HTTP client |
+| GetIt | Dependency injection |
+| Cached Network Image | Image loading and caching |
+| SharedPreferences | Theme persistence |
+| API-Football | Historical and future fixtures |
+| 365Scores API | Today live fixtures |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Flutter 3.x
+- Dart 3.x
+- Android Studio or VS Code
+
+### Installation
+
+```bash
+git clone https://github.com/Marco-Mina-Moris/ScorePulse.git
+cd ScorePulse
+flutter pub get
+flutter run
+```
+
+### Build APK
+
+```bash
+flutter build apk --release
+```
+
+---
+
+## API Keys
+
+Add your API-Football key in `soccer_data_source.dart`:
+
+```dart
+const apiFootballKey = 'YOUR_API_KEY';
+```
+
+Get a free key at: [https://api-football.com](https://api-football.com)
+
+---
+
+## Project Structure
+
+```
+lib/
+  src/
+    config/
+      app_theme.dart
+    core/
+      network/
+      utils/
+    features/
+      soccer/
+        data/
+          datasources/
+          models/
+          repositories/
+        domain/
+          entities/
+          repositories/
+          usecases/
+        presentation/
+          cubit/
+          screens/
+          widgets/
+      theme/
+        theme_cubit.dart
+```
+
+---
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## License
+
+MIT License
+
+---
+
+Developed by Marco Mina
